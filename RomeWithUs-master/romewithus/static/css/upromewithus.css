@@ -1,0 +1,836 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    margin: 0px;
+}
+
+.romewithus_bg {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    background-size: cover;
+
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #f7f3f2 !important;
+    /* White color */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+    color: #d31fd3 !important;
+    /* Light pink color on hover */
+}
+
+.navbar-toggler-icon {
+    color: black;
+    /* White color for the toggler icon */
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #f0160e;
+    /* Pink color */
+    animation: moveUnderline 0.3s forwards;
+}
+
+@keyframes moveUnderline {
+    to {
+        width: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        background-color: transparent;
+        /* Black background for mobile menu */
+        padding: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        color: #f7f3f2 !important;
+        /* White color */
+        font-weight: bold;
+        margin: 5px 0;
+    }
+
+    .navbar-nav .nav-link:hover::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 2px;
+        background-color: #f0160e;
+        /* Pink color */
+        animation: moveUnderline 0.3s forwards;
+    }
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-family: 'Monoton', cursive;
+    /* Use Monoton font for the logo */
+}
+
+.romewithus-car-baner {
+    position: relative;
+    background-image: url("https://images.pexels.com/photos/712618/pexels-photo-712618.jpeg?cs=srgb&dl=pexels-neil-kelly-712618.jpg&fm=jpg");
+    background-size: cover;
+    height: 100vh;
+    /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    /* Ensure no overflow issues */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent black overlay */
+}
+
+.content-container {
+    z-index: 1;
+    padding: 20px;
+}
+
+.content-container h1 {
+    font-size: 3rem;
+    /* Adjust the font size */
+    margin-bottom: 20px;
+}
+
+.content-container p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.pink-text {
+    color: #ff1493;
+    /* Pink color for the heading */
+}
+
+.text-light {
+    color: rgba(255, 255, 255, 0.8);
+    /* Lighter white color for the text */
+}
+
+
+
+.section-romewithus-gallery-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ff1493;
+    margin-bottom: 30px;
+    /* Dark text color */
+}
+
+#CardGalleryCarousel .carousel-item {
+    padding: 10px;
+}
+
+#CardGalleryCarousel .equal-size-image {
+    height: 250px;
+    /* Adjust height as needed for uniform image size */
+    object-fit: cover;
+    /* Maintain aspect ratio */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#CardGalleryCarousel .carousel-control-prev,
+#CardGalleryCarousel .carousel-control-next {
+    width: auto;
+    color: #333;
+    /* Dark color for controls */
+    background: none;
+    /* Transparent background */
+}
+
+#CardGalleryCarousel .carousel-control-prev-icon,
+#CardGalleryCarousel .carousel-control-next-icon {
+    background-color: #333;
+    /* Dark color for control icons */
+    border-radius: 50%;
+    /* Rounded shape */
+    padding: 10px;
+    /* Adjust size as needed */
+}
+
+#CardGalleryCarousel .carousel-control-prev:hover,
+#CardGalleryCarousel .carousel-control-next:hover {
+    color: #fff;
+    /* White text on hover */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+#DriverSection .drivers-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff1493;
+}
+
+#DriverSection .drivers-card {
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    border: 2px solid #8B008B;
+}
+
+#DriverSection .drivers-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#DriverSection .drivers-card img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#DriverSection .drivers-card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+#DriverSection .drivers-card-title {
+    margin-bottom: 10px;
+}
+
+#DriverSection .drivers-card-text {
+    list-style-type: none;
+    padding: 0;
+}
+
+#DriverSection .btn-custom {
+    margin-top: auto;
+    background-color: #ff1493;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#DriverSection .btn-custom:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #sectionDriverSection .drivers-card {
+        text-align: center;
+    }
+}
+
+.section-fleet {
+    margin-top: 5rem;
+}
+
+.fleet-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff1493;
+}
+
+.fleet-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fleet-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*.fleet-item {
+    width: 30%;
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    border: 2px solid #8B008B;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+}*/
+.fleet-item {
+    text-align: center;
+    border: 1px solid #ddd;
+    border: 2px solid #8B008B;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+}
+
+
+.fleet-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/*.fleet-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}*/
+.fleet-img {
+    width: 100%;
+    height: 200px;
+    /* Fixed height for images */
+    object-fit: cover;
+}
+
+.fleet-details {
+    padding: 1rem;
+}
+
+.fleet-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.fleet-star {
+    font-size: 1.2rem;
+    color: #FFD700;
+}
+
+.fleet-percent {
+    margin-left: 0.5rem;
+}
+
+.fleet-type,
+.fleet-cost,
+.fleet-availability {
+    margin: 0.2rem 0;
+}
+
+.btn-custom {
+    margin-top: 1rem;
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.btn-custom a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+}
+
+.section-about-us-session {
+    margin-top: 5rem;
+}
+
+.about-us-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff1493;
+}
+
+.about-us-dis {
+    margin-bottom: 1.5rem;
+
+}
+
+.head-solid {
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-about-card {
+    text-align: center;
+    border: 2px solid #ff1493;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+    min-height: 360px;
+}
+
+.section-about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-card-icon {
+    font-size: 50px;
+    color: #ff1493;
+}
+
+.section-about-card-head {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.section-about-card-text {
+    margin-top: 0.5rem;
+}
+
+.about-list {
+    list-style-type: disc;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+.section-contact-us-session {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    background-color: transparent;
+    color: #000;
+    /* Ensure text is dark for readability */
+}
+
+.section-contact-us-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff1493;
+}
+
+.section-contact-dis {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section-contact-info {
+    text-align: center;
+}
+
+.section-contact-info p {
+    margin-bottom: 1rem;
+}
+
+.section-contact-info strong {
+    color: #ff1493;
+    /* Optional: Highlight contact labels with pink */
+}
+
+.section-foot-session {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: transparent;
+    /* Ensure the background is transparent */
+}
+
+.section-foot-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.section-foot-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff1493;
+    /* Logo color */
+}
+
+.section-foot-icon-container {
+    font-size: 1.5rem;
+    color: #ff1493;
+    /* Icon color */
+}
+
+.section-foot-address {
+    font-size: 1rem;
+    color: #000;
+    /* Text color */
+    margin-bottom: 0.5rem;
+}
+
+.section-foot-bold {
+    font-weight: bold;
+}
+
+.section-foot-line {
+    border: 0;
+    border-top: 1px solid #ff1493;
+    /* Line color */
+    margin: 1rem 0;
+}
+
+.section-foot-session .pt-2,
+.section-foot-session .pt-5 {
+    padding-top: 2rem;
+    padding-top: 5rem;
+}
+
+/* Section Styles */
+.sd.section {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    /* Background color for the section */
+    padding-bottom: 5rem;
+}
+
+/* Driver Details Title */
+.sd-drivers-name-title {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+    /* Title text color */
+    background-color: transparent;
+    /* Transparent background */
+}
+
+/* Driver Details Container */
+.sd-details-bg {
+    background-color: transparent;
+    /* Transparent background */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    /* Box shadow */
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #ff1493;
+}
+
+/* Main Head (Driver Name) */
+.main-head {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    /* Text color */
+}
+
+/* Additional Details List */
+.small-title {
+    list-style-type: disc;
+    margin-left: 2rem;
+    font-size: 1rem;
+    color: #666;
+    /* Text color */
+}
+
+/* Questions and Answers Section */
+.questions-answers {
+    margin-top: 2rem;
+}
+
+/* Question Title */
+.questions-answers h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    /* Text color */
+    margin-bottom: 1rem;
+}
+
+/* QA Pair */
+.qa {
+    margin-bottom: 1rem;
+}
+
+/* Answer Text */
+.qa .small-title {
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: #666;
+    /* Text color */
+}
+
+/* Back Button */
+.sd-btn-custom {
+    background-color: #ff1493;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sd-btn-custom:hover {
+    background-color: #0056b3;
+    /* Hover background color */
+}
+
+/*.....................*/
+
+.fcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    width: 90%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1.5px solid #ccc;
+    /* Default border color */
+    border-radius: 4px;
+    background: transparent;
+    transition: border-color 0.2s;
+    /* Smooth transition for border color change */
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: #ff1493;
+    /* Blue border color on focus */
+}
+
+.form-label {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #666;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.form-control:focus+.form-label,
+.form-control:not(:placeholder-shown)+.form-label {
+    top: -0.95rem;
+    left: 1rem;
+    font-size: 0.75rem;
+    color: #ff1493;
+    background: #fff;
+    padding: 0 0.25rem;
+}
+
+.btnf {
+    display: inline-block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #ff1493;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btnf:hover {
+    background-color: #1558b0;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-footer {
+    margin-top: 1rem;
+}
+
+.form-footer a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+/* Add this CSS to your stylesheet */
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 1rem 0.75rem 0.375rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+    border-color: #ff1493;
+}
+
+.form-group label {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    background-color: white;
+    color: #757575;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+    padding: 0 0.25rem;
+}
+
+.form-group input:focus+label,
+.form-group input:not(:placeholder-shown)+label {
+    top: -0.6rem;
+    left: 0.75rem;
+    color: #ff1493;
+    font-size: 0.75rem;
+}
+
+.form-group input:focus+label {
+    color: #ff1493;
+}
+
+/*.................................................*/
+.carModel {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff1493;
+}
+
+.car-rental-form {
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #8B008B;
+}
+
+.car-rental-form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.car-rental-form input[type="text"],
+.car-rental-form input[type="tel"],
+.car-rental-form input[type="date"],
+.car-rental-form select,
+.car-rental-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    background-color: transparent;
+}
+
+.car-rental-form input[type="text"]:focus,
+.car-rental-form input[type="tel"]:focus,
+.car-rental-form input[type="date"]:focus,
+.car-rental-form select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.car-rental-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.car-rental-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.car-rental-form .radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.car-rental-form .radio-group input[type="radio"] {
+    margin-right: 8px;
+}
+
+.car-rental-form .radio-group label {
+    margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+    .car-rental-form {
+        padding: 15px;
+    }
+
+    .car-rental-form input[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+.booking-head {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff1493;
+}

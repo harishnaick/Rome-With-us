@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href="{{ url_for('static', filename='css/upromewithus.css') }}">
+</head>
+
+<body>
+    <div id="sectionhomepage" class=" romewithus_bg">
+        <nav class="navbar navbar-expand-lg navbar-dark  transparent-navbar  fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand logo brand-name-banner" href="#">RomeWithUs</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Banner"><i class="fas fa-home"></i> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Gallery"><i class="fa fa-images"></i> Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#DriverSection"><i class="fa fa-user-tie"></i> Drivers</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Fleet"><i class="fas fa-car "></i> Fleet</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class=" nav-link" id="signinload" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <i class="fas fa-sign-in-alt"></i> Login
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="romewithus-car-baner position-relative" id="Banner">
+            <div class="overlay"></div>
+            <div class="content-container text-center text-white">
+                <h1 class="pink-text">BEST CARS FOR THE BEST JOURNEY</h1>
+                <p class="text-light"><i>We provide the best cars with the best prices. We are experts in car rental. Enjoy your holidays with us; we make your drive memorable. We care for your safety.</i></p>
+            </div>
+        </div>
+        <div class="section-romewithus-gallery mt-5" id="Gallery">
+            <div class="container">
+                <h2 class="text-left mb-4 section-romewithus-gallery-title">Gallery</h2>
+                <div id="CardGalleryCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <img src="https://img.freepik.com/free-photo/view-car-running-high-speed_23-2150635403.jpg?t=st=1702756812~exp=1702760412~hmac=290d9837ce94a9845ed8090b1ff9464eb1fe51eb7e0013afdb3ccacc810ede85&w=826" class="d-block w-100 equal-size-image" alt="Image 1">
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <img src="https://img.freepik.com/premium-photo/headlights-hood-black-sports-car_146671-5564.jpg?w=740" class="d-block w-100 equal-size-image" alt="Image 2">
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <img src="https://img.freepik.com/premium-photo/close-up-suv-car-with-sport-modern-design-car-dealership_67092-423.jpg" class="d-block w-100 equal-size-image" alt="Image 3">
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <img src="https://img.freepik.com/free-photo/male-mechanics-working-car-shop-together_23-2150377017.jpg?t=st=1702756803~exp=1702757403~hmac=395fec02ef143a69a8bf80fc81d499e4b7567d550167e27c5d4f1d46722b0548" class="d-block w-100 equal-size-image" alt="Image 4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <img src="https://img.freepik.com/premium-photo/mechanic-blue-overalls-checking-serviceability-car-engine_35752-8535.jpg" class="d-block w-100 equal-size-image" alt="Image 5">
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <img src="https://img.freepik.com/free-photo/luxury-sedan-sport-cars-road_114579-4019.jpg?size=626&ext=jpg" class="d-block w-100 equal-size-image" alt="Image 6">
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <img src="https://img.freepik.com/free-photo/young-man-polishing-his-car-with-rag_1303-21782.jpg?size=626&ext=jpg" class="d-block w-100 equal-size-image" alt="Image 7">
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <img src="https://img.freepik.com/free-photo/young-man-choosing-car-car-showroom_1303-21753.jpg?size=626&ext=jpg" class="d-block w-100 equal-size-image" alt="Image 8">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more carousel items as needed -->
+                    </div>
+                    <a class="carousel-control-prev" href="#sectionCardGalleryCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#sectionCardGalleryCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <div id="CardGalleryCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <img src="https://img.freepik.com/free-photo/vehicle-dealer-handing-keys-new-car-owner_342744-740.jpg?size=626&ext=jpg" class="d-block w-100 equal-size-image" alt="Image 1">
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <img src="https://img.freepik.com/free-photo/people-vehicle-dealership-buying-new-car_342744-749.jpg?size=626&ext=jpg" class="d-block w-100 equal-size-image" alt="Image 2">
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <img src="https://img.freepik.com/free-photo/happy-young-girl-holding-car-keys_23-2148333008.jpg?size=626&ext=jpg" class="d-block w-100 equal-size-image" alt="Image 3">
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <img src="https://img.freepik.com/free-photo/stylish-elegant-couple-car-salon_1157-22226.jpg?size=626&ext=jpg" class="d-block w-100 equal-size-image" alt="Image 4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <img src="https://img.freepik.com/premium-photo/white-floor-new-car-parking-new-car-pictures-showroom-park-show-waiting-sales-branch-dealers-new-car-service-centers_140555-8.jpg?size=626&ext=jpg" class="d-block w-100 equal-size-image" alt="Image 5">
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <img src="https://img.freepik.com/premium-photo/luxury-new-suv-car-parked-concrete-parking-area-factory_33867-45.jpg?size=626&ext=jpg" class="d-block w-100 equal-size-image" alt="Image 6">
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <img src="https://img.freepik.com/free-photo/front-view-man-taking-selfie-with-car_23-2148332959.jpg?size=626&ext=jpg" class="d-block w-100 equal-size-image" alt="Image 7">
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <img src="https://img.freepik.com/premium-photo/female-dealership-manager-helping-customer-choose-new-car_274689-16992.jpg?size=626&ext=jpg" class="d-block w-100 equal-size-image" alt="Image 8">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more carousel items as needed -->
+                    </div>
+                    <a class="carousel-control-prev" href="#sectionCardGalleryCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#sectionCardGalleryCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="section romewithus-driver-session mt-5" id="DriverSection">
+            <div class="container">
+                <h1 class="drivers-title mb-4">Explore Drivers</h1>
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+                        <div class="drivers-card drivers-details">
+                            <!-- Card Content -->
+                            <img src="https://img.freepik.com/free-photo/handsome-business-man-travelling-car_1303-16402.jpg?size=626&ext=jpg" class="card-img-top" alt="Image 1">
+                            <div class="drivers-card-body d-flex flex-column align-items-center">
+                                <h5 class="drivers-card-title">Charles</h5>
+                                <ul class="drivers-card-text text-dark">
+                                    <li>Experience: 5 years</li>
+                                    <li>Age: 28</li>
+                                    <li>Salary: $45,000 per year</li>
+                                    <li>Driving Profile: Young professional</li>
+                                </ul>
+                                <a href="#" class="btn btn-custom" onclick="display('sectiondriver1')">Know more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+                        <div class="drivers-card drivers-details">
+                            <!-- Card Content -->
+                            <img src="https://img.freepik.com/free-photo/young-woman-testing-car-car-showroom_1303-17732.jpg?size=626&ext=jpg" class="card-img-top" alt="Image 2">
+                            <div class="drivers-card-body d-flex flex-column align-items-center">
+                                <h5 class="drivers-card-title">Sophia</h5>
+                                <ul class="drivers-card-text text-dark">
+                                    <li>Experience: 2 years</li>
+                                    <li>Age: 23</li>
+                                    <li>Salary: $35,000 per year</li>
+                                    <li>Driving Profile: Rideshare driver</li>
+                                </ul>
+                                <a href="#" class="btn btn-custom" onclick="display('sectiondriver2')">Know more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+                        <div class="drivers-card drivers-details">
+                            <!-- Card Content -->
+                            <img src="https://img.freepik.com/free-photo/handsome-young-businessman-full-suit-smiling-while-driving-new-car_496169-594.jpg?size=626&ext=jpg" class="card-img-top" alt="Image 3">
+                            <div class="drivers-card-body d-flex flex-column align-items-center">
+                                <h5 class="drivers-card-title">Carter</h5>
+                                <ul class="drivers-card-text text-dark">
+                                    <li>Experience: 10 years</li>
+                                    <li>Age: 35</li>
+                                    <li>Salary: $50,000 per year</li>
+                                    <li>Driving Profile:professional</li>
+                                </ul>
+                                <a href="#" class="btn btn-custom" onclick="display('sectiondriver3'); return false;">Know more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Card 4 -->
+                    <div class="col-md-4">
+                        <div class="drivers-card drivers-details">
+                            <!-- Card Content -->
+                            <img src="https://img.freepik.com/free-photo/front-view-car-dealers-testing-car_23-2148332875.jpg?size=626&ext=jpg" class="card-img-top" alt="Image 4">
+                            <div class="drivers-card-body d-flex flex-column align-items-center">
+                                <h5 class="drivers-card-title">Lara</h5>
+                                <ul class="drivers-card-text text-dark">
+                                    <li>Experience: 8 years</li>
+                                    <li>Age: 32</li>
+                                    <li>Salary: $55,000 per year</li>
+                                    <li>Driving Profile: Eco-conscious</li>
+                                </ul>
+                                <a href="#" class="btn btn-custom" onclick="display('sectiondriver4'); return false;">Know more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col-md-4">
+                        <div class="drivers-card drivers-details">
+                            <!-- Card Content -->
+                            <img src="https://img.freepik.com/free-photo/handsome-business-man-driving-car_1303-20915.jpg?size=626&ext=jpg" class="card-img-top" alt="Image 5">
+                            <div class="drivers-card-body d-flex flex-column align-items-center">
+                                <h5 class="drivers-card-title">Christopher</h5>
+                                <ul class="drivers-card-text text-dark">
+                                    <li>Experience: 25 years</li>
+                                    <li>Age: 60</li>
+                                    <li>Salary: $60,000 per year</li>
+                                    <li>Driving Profile: Senior driver</li>
+                                </ul>
+                                <a href="#" class="btn btn-custom" onclick="display('sectiondriver5'); return false;">Know more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="col-md-4">
+                        <div class="drivers-card drivers-details">
+                            <!-- Card Content -->
+                            <img src="https://img.freepik.com/premium-photo/young-man-wheel_105818-19.jpg?size=626&ext=jpg" class="card-img-top" alt="Image 6">
+                            <div class="drivers-card-body d-flex flex-column align-items-center">
+                                <h5 class="drivers-card-title">Jayden</h5>
+                                <ul class="drivers-card-text text-dark">
+                                    <li>Experience: 3 years</li>
+                                    <li>Age: 26</li>
+                                    <li>Salary: $40,000 per year</li>
+                                    <li>Driving Profile: Student driver</li>
+                                </ul>
+                                <a href="#" class="btn btn-custom" onclick="display('sectiondriver6'); return false;">Know more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Card 7 -->
+                    <div class="col-md-4">
+                        <div class="drivers-card drivers-details">
+                            <!-- Card Content -->
+                            <img src="https://img.freepik.com/premium-photo/happy-arabic-man-driving-car-showing-thumb-up-sitting-inside_116547-70412.jpg?size=626&ext=jpg" class="card-img-top" alt="Image 7">
+                            <div class="drivers-card-body d-flex flex-column align-items-center">
+                                <h5 class="drivers-card-title">Aakash</h5>
+                                <ul class="drivers-card-text text-dark">
+                                    <li>Experience: 7 years</li>
+                                    <li>Age: 30</li>
+                                    <li>Salary: $48,000 per year</li>
+                                    <li>Driving Profile: Tech-savvy driver</li>
+                                </ul>
+                                <a href="#" class="btn btn-custom" onclick="display('sectiondriver7'); return false;">Know more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="col-md-4">
+                        <div class="drivers-card drivers-details">
+                            <!-- Card Content -->
+                            <img src="https://img.freepik.com/premium-photo/asian-driver-look-out-from-open-window-with-smile_8595-2905.jpg?size=626&ext=jpg" class="card-img-top" alt="Image 8">
+                            <div class="drivers-card-body d-flex flex-column align-items-center">
+                                <h5 class="drivers-card-title">Kalyan</h5>
+                                <ul class="drivers-card-text text-dark">
+                                    <li>Experience: 12 years</li>
+                                    <li>Age: 45</li>
+                                    <li>Salary: $65,000 per year</li>
+                                    <li>Driving Profile: Night owl driver</li>
+                                </ul>
+                                <a href="#" class="btn btn-custom" onclick="display('sectiondriver8'); return false;">Know more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 9 -->
+                    <div class="col-md-4">
+                        <div class="drivers-card drivers-details">
+                            <!-- Card Content -->
+                            <img src="https://img.freepik.com/free-photo/happy-car-driver-with-fastened-seat-belt_158595-4228.jpg?size=626&ext=jpg" class="card-img-top" alt="Image 9">
+                            <div class="drivers-card-body d-flex flex-column align-items-center">
+                                <h5 class="drivers-card-title">Sainath</h5>
+                                <ul class="drivers-card-text text-dark">
+                                    <li>Experience: 20 years</li>
+                                    <li>Age: 55</li>
+                                    <li>Salary: $70,000 per year</li>
+                                    <li>Driving Profile: Seasoned driver</li>
+                                </ul>
+                                <a href="#" class="btn btn-custom" onclick="display('sectiondriver9'); return false;">Know more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-fleet mt-5" id="Fleet">
+            <div class="container">
+                <h1 class="fleet-title mb-4">Fleet Showcase</h1>
+                <div class="overflow-auto">
+                    <div class="fleet-category">
+                        <div class="fleet-list row">
+                            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                <div class="fleet-item card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqoWLi-SjxQSO_UMpTsURWTektMhYPson-xg&usqp=CAU" class="fleet-img card-img-top">
+                                    <div class="fleet-details card-body">
+                                        <h1 class="carModel" id="carModel1">Suzuki</h1>
+                                        <div class="fleet-rating">
+                                            <span class="fleet-star">★★★★☆</span>
+                                            <span class="fleet-percent">4.5</span>
+                                        </div>
+                                        <p class="fleet-type"><strong>Vehicle Type:</strong> Luxury</p>
+                                        <p class="fleet-cost" id="carCost1"><strong>Cost:</strong> $150 per day</p>
+                                        <p class="fleet-availability"><strong>Availability:</strong> In stock</p>
+                                        <button class="btn btn-custom" type="button" data-toggle="modal" data-target="#carRentalModal" onclick="populateForm(1)">Rent Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                <div class="fleet-item card">
+                                    <img src="https://cdni.autocarindia.com/utils/imageresizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/S-PressoModelImage.jpg&w=872&h=578&q=75&c=1" class="fleet-img card-img-top">
+                                    <div class="fleet-details card-body">
+                                        <h1 class="carModel" id="carModel2">Tata Sumo</h1>
+                                        <div class="fleet-rating">
+                                            <span class="fleet-star">★★★★☆</span>
+                                            <span class="fleet-percent">4.5</span>
+                                        </div>
+                                        <p class="fleet-type"><strong>Vehicle Type:</strong> Luxury</p>
+                                        <p class="fleet-cost" id="carCost2"><strong>Cost:</strong> $150 per day</p>
+                                        <p class="fleet-availability"><strong>Availability:</strong> In stock</p>
+                                        <button class="btn btn-custom" type="button" data-toggle="modal" data-target="#carRentalModal" onclick="populateForm(2)">Rent Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                <div class="fleet-item card">
+                                    <img src="https://imgd-ct.aeplcdn.com/664x415/n/cw/ec/27074/civic-exterior-left-front-three-quarter.jpeg?q=80" class="fleet-img card-img-top">
+                                    <div class="fleet-details card-body">
+                                        <h1 class="carModel" id="carModel3">Tata Nano</h1>
+                                        <div class="fleet-rating">
+                                            <span class="fleet-star">★★★★☆</span>
+                                            <span class="fleet-percent">4.5</span>
+                                        </div>
+                                        <p class="fleet-type"><strong>Vehicle Type:</strong> Luxury</p>
+                                        <p class="fleet-cost" id="carCost3"><strong>Cost:</strong> $150 per day</p>
+                                        <p class="fleet-availability"><strong>Availability:</strong> In stock</p>
+                                        <button class="btn btn-custom" type="button" data-toggle="modal" data-target="#carRentalModal" onclick="populateForm(3)">Rent Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                <div class="fleet-item card">
+                                    <img src="https://cdni.autocarindia.com/utils/imageresizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Hyundai-Grand-i10-Nios-200120231541.jpg&w=350&h=251&q=91&c=1" class="fleet-img card-img-top">
+                                    <div class="fleet-details card-body">
+                                        <h1 class="carModel" id="carModel4">Tata Nano</h1>
+                                        <div class="fleet-rating">
+                                            <span class="fleet-star">★★★★☆</span>
+                                            <span class="fleet-percent">4.5</span>
+                                        </div>
+                                        <p class="fleet-type"><strong>Vehicle Type:</strong> Luxury</p>
+                                        <p class="fleet-cost" id="carCost4"><strong>Cost:</strong> $150 per day</p>
+                                        <p class="fleet-availability"><strong>Availability:</strong> In stock</p>
+                                        <button class="btn btn-custom" type="button" data-toggle="modal" data-target="#carRentalModal" onclick="populateForm(4)">Rent Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                <div class="fleet-item card">
+                                    <img src="https://media.zigcdn.com/media/model/2021/Jan/fortuner-3_360x240.jpg" class="fleet-img card-img-top">
+                                    <div class="fleet-details card-body">
+                                        <h1 class="carModel" id="carModel5">Tata Nano</h1>
+                                        <div class="fleet-rating">
+                                            <span class="fleet-star">★★★★☆</span>
+                                            <span class="fleet-percent">4.5</span>
+                                        </div>
+                                        <p class="fleet-type"><strong>Vehicle Type:</strong> Luxury</p>
+                                        <p class="fleet-cost" id="carCost5"><strong>Cost:</strong> $150 per day</p>
+                                        <p class="fleet-availability"><strong>Availability:</strong> In stock</p>
+                                        <button class="btn btn-custom" type="button" data-toggle="modal" data-target="#carRentalModal" onclick="populateForm(5)">Rent Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                <div class="fleet-item card">
+                                    <img src="https://media.zigcdn.com/media/content/2011/Apr/ashokleylanddostnissan_1_560x420.jpg?tr=w-420" class="fleet-img card-img-top">
+                                    <div class="fleet-details card-body">
+                                        <h1 class="carModel" id="carModel6">Tata Nano</h1>
+                                        <div class="fleet-rating">
+                                            <span class="fleet-star">★★★★☆</span>
+                                            <span class="fleet-percent">4.5</span>
+                                        </div>
+                                        <p class="fleet-type"><strong>Vehicle Type:</strong> Luxury</p>
+                                        <p class="fleet-cost" id="carCost6"><strong>Cost:</strong> $150 per day</p>
+                                        <p class="fleet-availability"><strong>Availability:</strong> In stock</p>
+                                        <button class="btn btn-custom" type="button" data-toggle="modal" data-target="#carRentalModal" onclick="populateForm(6)">Rent Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                                <div class="fleet-item card">
+                                    <img src="https://imgd.aeplcdn.com/664x374/ec/29/38/10441/img/l/Tata-Nano-left-rear-three-quarter-21097.jpg?v=201711021421&q=80" class="fleet-img card-img-top">
+                                    <div class="fleet-details card-body">
+                                        <h1 class="carModel" id="carModel7">Tata Nano</h1>
+                                        <div class="fleet-rating">
+                                            <span class="fleet-star">★★★★☆</span>
+                                            <span class="fleet-percent">4.5</span>
+                                        </div>
+                                        <p class="fleet-type"><strong>Vehicle Type:</strong> Luxury</p>
+                                        <p class="fleet-cost" id="carCost7"><strong>Cost:</strong> $150 per day</p>
+                                        <p class="fleet-availability"><strong>Availability:</strong> In stock</p>
+                                        <button class="btn btn-custom" type="button" data-toggle="modal" data-target="#carRentalModal" onclick="populateForm(7)">Rent Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-about-us-session mt-5" id="Aboutus">
+            <div class="container">
+                <h2 class="about-us-title">About Us</h2>
+                <p class="about-us-dis">Welcome to RomeWithUs, the epitome of your travel aspirations! Our story began in 2023, fueled by a passion for providing more than just cars – we aim to be your travel companion on every journey.</p>
+
+                <p class="about-us-dis">At RomeWithUs, our fleet is not just a collection of vehicles; it's a testament to our commitment to excellence. Whether you're embarking on a spontaneous road trip, a family vacation, or a business expedition, our diverse fleet caters to all your travel needs.</p>
+
+                <p class="about-us-dis head-solid"><strong>What makes RomeWithUs stand out?</strong></p>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="section-about-card p-5 mb-3">
+                            <i class="fas fa-car-side about-card-icon"></i>
+                            <h1 class="section-about-card-head mt-3">Driver Service</h1>
+                            <p class="section-about-card-text">
+                                <strong>24X7 Available</strong>. We have experienced drivers. All drivers are carefully selected to give you nothing less than perfect service.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="section-about-card p-5 mb-3">
+                            <i class="fas fa-tags about-card-icon"></i>
+                            <h1 class="section-about-card-head mt-3">Best Offers</h1>
+                            <p class="section-about-card-text">
+                                Offers up to <strong>50% off</strong> on instant booking. Stay tuned for exclusive offers.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="section-about-card p-5 mb-3">
+                            <i class="fas fa-map-marked-alt about-card-icon"></i>
+                            <h1 class="section-about-card-head mt-3">Branches</h1>
+                            <p class="section-about-card-text">
+                                Our branches are located in Hyderabad, Chennai, Bengaluru, Kadapa, Tirupati, Kurnool, and Chinnachappali, with the main branch at <strong>Jammalamadugu</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p class="about-us-dis">Our journey is intertwined with the stories of our customers. From the excitement of a solo adventure to the shared joy of a family getaway, RomeWithUs is honored to be part of your cherished moments on the road.</p>
+                <ul>
+                    <li class="about-list">Immaculately maintained vehicles equipped with the latest safety features.</li>
+                    <li class="about-list">Effortless online bookings, ensuring convenience at your fingertips.</li>
+                    <li class="about-list">Flexible rental plans crafted to suit your unique travel itinerary.</li>
+                    <li class="about-list">Our commitment to environmental sustainability with eco-friendly options.</li>
+                    <li class="about-list">A community-driven ethos, fostering connections with fellow travelers.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section-contact-us-session text-dark mt-5 mb-4" id="Contactus">
+            <div class="container text-dark">
+                <h2 class="section-contact-us-title">Contact Us</h2>
+                <p class="section-contact-dis">If you have any inquiries or need assistance, our dedicated team is here to ensure your journey is smooth and enjoyable. Reach out to us through the following contact information:</p>
+
+                <div class="section-contact-info row text-dark">
+                    <div class="col-12 col-md-4">
+                        <p><strong>Email:</strong> RomeWithUs@gmail.com</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <p><strong>Phone:</strong> 7093597819</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <p><strong>Address:</strong> 123 Car Rental Street, Cityville, State, 12345</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-foot-session mt-5 mb-5" id="Foot">
+            <div class="container">
+                <div class="row">
+                    <div class="order-md-1 col-12 col-md-6 col-lg-3 text-center">
+                        <h2 class="section-foot-logo section-foot-title">RomeWithUs</h2>
+                        <div class="mb-2 d-flex flex-row justify-content-center">
+                            <div class="section-foot-icon-container m-2">
+                                <i class="fa fa-google"></i>
+                            </div>
+                            <div class="section-foot-icon-container m-2">
+                                <i class="fa fa-twitter fa-lg"></i>
+                            </div>
+                            <div class="section-foot-icon-container m-2">
+                                <i class="fa fa-instagram fa-lg"></i>
+                            </div>
+                            <div class="section-foot-icon-container m-2">
+                                <i class="fa fa-linkedin fa-lg"></i>
+                            </div>
+                        </div>
+                        <p class="section-foot-address">26,Nethaji Nagar,Jammalamadugu,Ap,India.</p>
+                    </div>
+                    <div class="col-6 mb-3 col-lg-3 order-md-2">
+                        <div class="mb-2">
+                            <h3 class="section-foot-address section-foot-bold">Get to know us</h3>
+                        </div>
+                        <p class="section-foot-address">About us</p>
+                        <p class="section-foot-address">Career</p>
+                        <p class="section-foot-address">Press Releases</p>
+                        <p class="section-foot-address">Gift a smile</p>
+                    </div>
+                    <div class="col-6 mb-3 order-md-3 col-lg-3">
+                        <div class="mb-2">
+                            <h3 class="section-foot-address section-foot-bold">Contact with us</h3>
+                        </div>
+                        <p class="section-foot-address">Facebook</p>
+                        <p class="section-foot-address">Twitter</p>
+                        <p class="section-foot-address">Instagram</p>
+                    </div>
+                    <div class="col-6 mb-3 order-md-4 col-lg-3">
+                        <div class="mb-2">
+                            <h3 class="section-foot-address section-foot-bold">Let Us Help You</h3>
+                        </div>
+                        <p class="section-foot-address">100% Purchase protection</p>
+                        <p class="section-foot-address">Your Account</p>
+                        <p class="section-foot-address">Return Center</p>
+                        <p class="section-foot-address">Help</p>
+                    </div>
+                </div>
+                <hr class="section-foot-line" />
+                <div class="col-12 text-center pt-2">
+                    <p class="section-foot-address section-foot-bold">
+                        <i class="fa fa-copyright fa-lg"></i> 2020 by Team Toman. Created with Bootstrap.
+                    </p>
+                </div>
+                <div class="col-12 text-center pt-5">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!-- Modal HTML -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="fcontainer">
+                            <div id="signInFormWrapper">
+                                <div class="form-container">
+                                    <h1 class="title">Login</h1>
+                                    <p class="subtitle">to continue with Gmail</p>
+                                    <form id="signInForm" action="/login" method="POST">
+                                        <div class="form-group">
+                                            <input type="email" id="signInEmail" name="email" class="form-control" placeholder=" " required>
+                                            <label for="signInEmail">Email</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" id="signInPassword" name="password" class="form-control" placeholder=" " required>
+                                            <label for="signInPassword">Password</label>
+                                        </div>
+                                        <button type="submit" class="btnf">Sign In</button>
+                                        <div class="form-footer">
+                                            <p>Don't have an account? <a href="#" id="showCreateAccountForm">Create Account</a></p>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                            <div id="createAccountFormWrapper" class="hidden">
+                                <div class="form-container">
+                                    <h1 class="title">Create Account</h1>
+                                    <form id="createAccountForm" action="/create_account" method="POST">
+                                        <div class="input-group">
+                                            <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <select id="gender" name="gender" class="form-control" required>
+                                                <option value="" disabled selected>Select Gender</option>
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <select id="status" name="status" class="form-control" required>
+                                                <option value="" disabled selected>Select Status</option>
+                                                <option value="active">Active</option>
+                                                <option value="inactive">Inactive</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btnf">Create Account</button>
+                                        <div class="form-footer">
+                                            <p>Already have an account? <a href="#" id="showSignInForm">Sign In</a></p>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="carRentalModal" tabindex="-1" role="dialog" aria-labelledby="carRentalModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title booking-head" id="carRentalModalLabel">Car Rental Form</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="car-rental-form" action="/rent_car" method="POST">
+                            <label for="user_name">Name:</label>
+                            <input type="text" id="user_name" name="user_name" required>
+
+                            <label for="phone_no">Phone No:</label>
+                            <input type="tel" id="phone_no" name="phone_no" required>
+
+                            <label for="car_model">Car Model:</label>
+                            <input type="text" id="car_model" name="car_model" required>
+
+                            <label for="car_cost">Cost:</label>
+                            <input type="text" id="car_cost" name="car_cost" required>
+
+                            <label for="rental_start_date">Rental Start Date:</label>
+                            <input type="date" id="rental_start_date" name="rental_start_date" required>
+
+                            <label for="rental_end_date">Rental End Date:</label>
+                            <input type="date" id="rental_end_date" name="rental_end_date" required>
+
+                            <label>Driver Required:</label>
+                            <div class="radio-group">
+                                <input type="radio" id="driver_required_yes" name="driver_required" value="yes" checked>
+                                <label for="driver_required_yes">Yes</label>
+                                <input type="radio" id="driver_required_no" name="driver_required" value="no">
+                                <label for="driver_required_no">No</label>
+                            </div>
+
+                            <label for="driver_selection">Select Driver:</label>
+                            <select id="driver_selection" name="driver_selection" disabled>
+                                <option value="" disabled selected>Select a driver</option>
+                                <option value="driver1">Driver 1</option>
+                                <option value="driver2">Driver 2</option>
+                                <option value="driver3">Driver 3</option>
+                            </select>
+
+                            <input type="submit" value="Submit">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="sectiondriver1" class="sd section drivers-bg-img">
+        <div class="pt-5 pd-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="p-3 mb-4 sd-drivers-name-title">Driver Details - Charles</h2>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3 ml-3 pt-3 sd-details-bg bg-transparent">
+                        <img class="w-100" src="https://img.freepik.com/free-photo/handsome-business-man-travelling-car_1303-16402.jpg?size=626&ext=jpg" alt="" />
+                        <div class="p-3">
+                            <p class="main-head big-title">Charles</p>
+                            <ul class="small-title">
+                                <li>Experience: 15 years</li>
+                                <li>Age: 40</li>
+                                <li>Salary: $60,000 per year</li>
+                                <li>Driving Profile: Experienced commuter</li>
+                                <li>Attitude with Customers: Friendly and helpful</li>
+                                <li>Additional Details:
+                                    <ul class="small-title">
+                                        <li>Charles is a certified defensive driving instructor.</li>
+                                        <li>He holds a spotless driving record with zero accidents.</li>
+                                        <li>Known for providing a comfortable and enjoyable ride experience.</li>
+                                        <li>Charles is well-versed in the latest navigation technologies for efficient commuting.</li>
+                                        <li>He has received commendations for his exceptional customer service.</li>
+                                        <li>Charles is trained in basic vehicle maintenance to ensure a smooth and safe ride for passengers.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 mb-3 pt-3 ml-5 sd-details-bg bg-transparent shadow">
+                        <div class="p-3">
+                            <div class="questions-answers">
+                                <h3 class="font-weight-bold">Questions and Answers</h3>
+                                <div class="qa">
+                                    <p><strong>Q: How is Charles's driving in traffic?</strong></p>
+                                    <p class="small-title"><strong>A:</strong> Charles is very skilled in navigating through traffic. I've never had any issues.</p>
+                                </div>
+                                <div class="qa">
+                                    <p><strong>Q: Does Charles follow traffic rules?</strong></p>
+                                    <p class="small-title"><strong>A:</strong> Yes, Charles strictly follows all traffic rules and regulations.</p>
+                                </div>
+                                <!-- Add more Q&A pairs as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <button type="submit" class="btn sd-btn-custom mb-3" onclick="display('sectionhomepage')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectiondriver2" class="sd section drivers-bg-img">
+        <div class="pt-5 pd-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="p-3 mb-4 sd-drivers-name-title">Driver Details - Sophia</h2>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3 ml-3 pt-3 sd-details-bg bg-transparent">
+                        <img class="w-100" src="https://img.freepik.com/free-photo/young-woman-testing-car-car-showroom_1303-17732.jpg?size=626&ext=jpg" alt="" />
+                        <div class="p-3">
+                            <p class="main-head big-title">Sophia</p>
+                            <ul class="small-title">
+                                <li>Experience: 15 years</li>
+                                <li>Age: 40</li>
+                                <li>Salary: $60,000 per year</li>
+                                <li>Driving Profile: Experienced commuter</li>
+                                <li>Attitude with Customers: Friendly and helpful</li>
+                                <li>Additional Details:
+                                    <ul class="small-title">
+                                        <li>Sophia is a certified defensive driving instructor.</li>
+                                        <li>She holds a spotless driving record with zero accidents.</li>
+                                        <li>Known for providing a comfortable and enjoyable ride experience.</li>
+                                        <li>Sophia is well-versed in the latest navigation technologies for efficient commuting.</li>
+                                        <li>She has received commendations for her exceptional customer service.</li>
+                                        <li>Sophia is trained in basic vehicle maintenance to ensure a smooth and safe ride for passengers.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 mb-3 pt-3 ml-5 sd-details-bg bg-transparent shadow">
+                        <div class="p-3">
+                            <div class="questions-answers">
+                                <h3 class="font-weight-bold">Questions and Answers</h3>
+                                <div class="qa">
+                                    <p><strong>Q: How is Sophia's driving in traffic?</strong></p>
+                                    <p class="small-title"><strong>A:</strong> Sophia is very skilled in navigating through traffic. I've never had any issues.</p>
+                                </div>
+                                <div class="qa">
+                                    <p><strong>Q: Does Sophia follow traffic rules?</strong></p>
+                                    <p class="small-title"><strong>A:</strong> Yes, Sophia strictly follows all traffic rules and regulations.</p>
+                                </div>
+                                <!-- Add more Q&A pairs as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <button type="submit" class="btn sd-btn-custom mb-3" onclick="display('sectionhomepage')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectiondriver3" class="sd section drivers-bg-img">
+        <div class="pt-5 pd-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="p-3 mb-4 sd-drivers-name-title">Driver Details - Carter</h2>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3 ml-3 pt-3 sd-details-bg bg-transparent">
+                        <img class="w-100" src="https://img.freepik.com/free-photo/handsome-young-businessman-full-suit-smiling-while-driving-new-car_496169-594.jpg?size=626&ext=jpg" alt="" />
+                        <div class="p-3">
+                            <p class="main-head big-title">Carter</p>
+                            <ul class="small-title">
+                                <li>Experience: 15 years</li>
+                                <li>Age: 40</li>
+                                <li>Salary: $60,000 per year</li>
+                                <li>Driving Profile: Experienced commuter</li>
+                                <li>Attitude with Customers: Friendly and helpful</li>
+                                <li>Additional Details:
+                                    <ul class="small-title">
+                                        <li>Carter is a certified defensive driving instructor.</li>
+                                        <li>He holds a spotless driving record with zero accidents.</li>
+                                        <li>Known for providing a comfortable and enjoyable ride experience.</li>
+                                        <li>Carter is well-versed in the latest navigation technologies for efficient commuting.</li>
+                                        <li>He has received commendations for his exceptional customer service.</li>
+                                        <li>Carter is trained in basic vehicle maintenance to ensure a smooth and safe ride for passengers.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 mb-3 pt-3 ml-5 sd-details-bg bg-transparent shadow">
+                        <div class="p-3">
+                            <div class="questions-answers">
+                                <h3 class="font-weight-bold">Questions and Answers</h3>
+                                <div class="qa">
+                                    <p><strong>Q: How is Carter's driving in traffic?</strong></p>
+                                    <p class="small-title"><strong>A:</strong> Carter is very skilled in navigating through traffic. I've never had any issues.</p>
+                                </div>
+                                <div class="qa">
+                                    <p><strong>Q: Does Carter follow traffic rules?</strong></p>
+                                    <p class="small-title"><strong>A:</strong> Yes, Carter strictly follows all traffic rules and regulations.</p>
+                                </div>
+                                <!-- Add more Q&A pairs as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <button type="submit" class="btn sd-btn-custom mb-3" onclick="display('sectionhomepage')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectiondriver4" class="sd section drivers-bg-img">
+        <div class="pt-5 pd-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="p-3 mb-4 sd-drivers-name-title">Driver Details - Charles</h2>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3 ml-3 pt-3 sd-details-bg bg-transparent">
+                        <img class="w-100" src="https://img.freepik.com/free-photo/front-view-car-dealers-testing-car_23-2148332875.jpg?size=626&ext=jpg" alt="" />
+                        <div class="p-3">
+                            <p class="main-head big-title">Charles</p>
+                            <ul class="small-title">
+                                <li>Experience: 15 years</li>
+                                <li>Age: 40</li>
+                                <li>Salary: $60,000 per year</li>
+                                <li>Driving Profile: Experienced commuter</li>
+                                <li>Attitude with Customers: Friendly and helpful</li>
+                                <li>Additional Details:
+                                    <ul class="small-title">
+                                        <li>Charles is a certified defensive driving instructor.</li>
+                                        <li>He holds a spotless driving record with zero accidents.</li>
+                                        <li>Known for providing a comfortable and enjoyable ride experience.</li>
+                                        <li>Charles is well-versed in the latest navigation technologies for efficient commuting.</li>
+                                        <li>He has received commendations for his exceptional customer service.</li>
+                                        <li>Charles is trained in basic vehicle maintenance to ensure a smooth and safe ride for passengers.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 mb-3 pt-3 ml-5 sd-details-bg bg-transparent shadow">
+                        <div class="p-3">
+                            <div class="questions-answers">
+                                <h3 class="font-weight-bold">Questions and Answers</h3>
+                                <div class="qa">
+                                    <p><strong>Q: How is Charles's driving in traffic?</strong></p>
+                                    <p class="small-title"><strong>A:</strong> Charles is very skilled in navigating through traffic. I've never had any issues.</p>
+                                </div>
+                                <div class="qa">
+                                    <p><strong>Q: Does Charles follow traffic rules?</strong></p>
+                                    <p class="small-title"><strong>A:</strong> Yes, Charles strictly follows all traffic rules and regulations.</p>
+                                </div>
+                                <!-- Add more Q&A pairs as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <button type="submit" class="btn sd-btn-custom mb-3" onclick="display('sectionhomepage')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectiondriver5" class="sd section drivers-bg-img">
+        <div class="pt-5 pd-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="p-3 mb-4 sd-drivers-name-title">Driver Details - Charles</h2>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3 ml-3 pt-3 sd-details-bg bg-transparent">
+                        <img class="w-100" src="https://img.freepik.com/free-photo/handsome-business-man-driving-car_1303-20915.jpg?size=626&ext=jpg" alt="" />
+                        <div class="p-3">
+                            <p class="main-head big-title">Christopher</p>
+                            <ul class="small-title">
+                                <li>Experience: 15 years</li>
+                                <li>Age: 40</li>
+                                <li>Salary: $60,000 per year</li>
+                                <li>Driving Profile: Experienced commuter</li>
+                                <li>Attitude with Customers: Friendly and helpful</li>
+                                <li>Additional Details:
+                                    <ul class="small-title">
+                                        <li>Christopher is a certified defensive driving instructor.</li>
+                                        <li>He holds a spotless driving record with zero accidents.</li>
+                                        <li>Known for providing a comfortable and enjoyable ride experience.</li>
+                                        <li>Christopher is well-versed in the latest navigation technologies for efficient commuting.</li>
+                                        <li>He has received commendations for his exceptional customer service.</li>
+                                        <li>Christopher is trained in basic vehicle maintenance to ensure a smooth and safe ride for passengers.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 mb-3 pt-3 ml-5 sd-details-bg bg-transparent shadow">
+                        <div class="p-3">
+                            <div class="questions-answers">
+                                <h3 class="font-weight-bold">Questions and Answers</h3>
+                                <div class="qa">
+                                    <p><strong>Q: How is Christopher's driving in traffic?</strong></p>
+                                    <p class="small-title"><strong>A:</strong> Christopher is very skilled in navigating through traffic. I've never had any issues.</p>
+                                </div>
+                                <div class="qa">
+                                    <p><strong>Q: Does Christopher follow traffic rules?</strong></p>
+                                    <p class="small-title"><strong>A:</strong> Yes, Christopher strictly follows all traffic rules and regulations.</p>
+                                </div>
+                                <!-- Add more Q&A pairs as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <button type="submit" class="btn sd-btn-custom mb-3" onclick="display('sectionhomepage')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectiondriver6" class="sd section drivers-bg-img">
+        <div class="pt-5 pd-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="p-3 mb-4 sd-drivers-name-title">Driver Details - Jayden</h2>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3 ml-3 pt-3 sd-details-bg bg-transparent">
+                        <img class="w-100" src="https://img.freepik.com/premium-photo/young-man-wheel_105818-19.jpg?size=626&ext=jpg" alt="" />
+                        <div class="p-3">
+                            <p class="main-head big-title">Jayden</p>
+                            <ul class="small-title">
+                                <li>Experience: 15 years</li>
+                                <li>Age: 40</li>
+                                <li>Salary: $60,000 per year</li>
+                                <li>Driving Profile: Experienced commuter</li>
+                                <li>Attitude with Customers: Friendly and helpful</li>
+                                <li>Additional Details:
+                                    <ul class="small-title">
+                                        <li>Jayden is a certified defensive driving instructor.</li>
+                                        <li>He holds a spotless driving record with zero accidents.</li>
+                                        <li>Known for providing a comfortable and enjoyable ride experience.</li>
+                                        <li>Jayden is well-versed in the latest navigation technologies for efficient commuting.</li>
+                                        <li>He has received commendations for his exceptional customer service.</li>
+                                        <li>Jayden is trained in basic vehicle maintenance to ensure a smooth and safe ride for passengers.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 mb-3 pt-3 ml-5 sd-details-bg bg-transparent shadow">
+                        <div class="p-3">
+                            <div class="questions-answers">
+                                <h3 class="font-weight-bold">Questions and Answers</h3>
+                                <div class="qa">
+                                    <p><strong>Q: How is Jayden's driving in traffic?</strong></p>
+                                    <p class="small-title"><strong>A:</strong> Jayden is very skilled in navigating through traffic. I've never had any issues.</p>
+                                </div>
+                                <div class="qa">
+                                    <p><strong>Q: Does Jayden follow traffic rules?</strong></p>
+                                    <p class="small-title"><strong>A:</strong> Yes, Jayden strictly follows all traffic rules and regulations.</p>
+                                </div>
+                                <!-- Add more Q&A pairs as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <button type="submit" class="btn sd-btn-custom mb-3" onclick="display('sectionhomepage')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectiondriver7" class="sd section drivers-bg-img">
+        <div class="pt-5 pd-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="p-3 mb-4 sd-drivers-name-title">Driver Details - Aakash</h2>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3 ml-3 pt-3 sd-details-bg bg-transparent">
+                        <img class="w-100" src="https://img.freepik.com/premium-photo/happy-arabic-man-driving-car-showing-thumb-up-sitting-inside_116547-70412.jpg?size=626&ext=jpg" alt="" />
+                        <div class="p-3">
+                            <p class="main-head big-title">Aakash</p>
+                            <ul class="small-title">
+                                <li>Experience: 15 years</li>
+                                <li>Age: 40</li>
+                                <li>Salary: $60,000 per year</li>
+                                <li>Driving Profile: Experienced commuter</li>
+                                <li>Attitude with Customers: Friendly and helpful</li>
+                                <li>Additional Details:
+                                    <ul class="small-title">
+                                        <li>Aakash is a certified defensive driving instructor.</li>
+                                        <li>He holds a spotless driving record with zero accidents.</li>
+                                        <li>Known for providing a comfortable and enjoyable ride experience.</li>
+                                        <li>Aakash is well-versed in the latest navigation technologies for efficient commuting.</li>
+                                        <li>He has received commendations for his exceptional customer service.</li>
+                                        <li>Aakash is trained in basic vehicle maintenance to ensure a smooth and safe ride for passengers.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 mb-3 pt-3 ml-5 sd-details-bg bg-transparent shadow">
+                        <div class="p-3">
+                            <div class="questions-answers">
+                                <h3 class="font-weight-bold">Questions and Answers</h3>
+                                <div class="qa">
+                                    <p><strong>Q: How is Aakash's driving in traffic?</strong></p>
+                                    <p class="small-title"><strong>A:</strong> Aakash is very skilled in navigating through traffic. I've never had any issues.</p>
+                                </div>
+                                <div class="qa">
+                                    <p><strong>Q: Does Aakash follow traffic rules?</strong></p>
+                                    <p class="small-title"><strong>A:</strong> Yes, Aakash strictly follows all traffic rules and regulations.</p>
+                                </div>
+                                <!-- Add more Q&A pairs as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <button type="submit" class="btn sd-btn-custom mb-3" onclick="display('sectionhomepage')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectiondriver8" class="sd section drivers-bg-img">
+        <div class="pt-5 pd-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="p-3 mb-4 sd-drivers-name-title">Driver Details - Kalyan</h2>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3 ml-3 pt-3 sd-details-bg bg-transparent">
+                        <img class="w-100" src="https://img.freepik.com/premium-photo/asian-driver-look-out-from-open-window-with-smile_8595-2905.jpg?size=626&ext=jpg" alt="" />
+                        <div class="p-3">
+                            <p class="main-head big-title">Kalyan</p>
+                            <ul class="small-title">
+                                <li>Experience: 15 years</li>
+                                <li>Age: 40</li>
+                                <li>Salary: $60,000 per year</li>
+                                <li>Driving Profile: Experienced commuter</li>
+                                <li>Attitude with Customers: Friendly and helpful</li>
+                                <li>Additional Details:
+                                    <ul class="small-title">
+                                        <li>Kalyan is a certified defensive driving instructor.</li>
+                                        <li>He holds a spotless driving record with zero accidents.</li>
+                                        <li>Known for providing a comfortable and enjoyable ride experience.</li>
+                                        <li>Kalyan is well-versed in the latest navigation technologies for efficient commuting.</li>
+                                        <li>He has received commendations for his exceptional customer service.</li>
+                                        <li>Kalyan is trained in basic vehicle maintenance to ensure a smooth and safe ride for passengers.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 mb-3 pt-3 ml-5 sd-details-bg bg-transparent shadow">
+                        <div class="p-3">
+                            <div class="questions-answers">
+                                <h3 class="font-weight-bold">Questions and Answers</h3>
+                                <div class="qa">
+                                    <p><strong>Q: How is Kalyan's driving in traffic?</strong></p>
+                                    <p class="small-title"><strong>A:</strong> Kalyan is very skilled in navigating through traffic. I've never had any issues.</p>
+                                </div>
+                                <div class="qa">
+                                    <p><strong>Q: Does Kalyan follow traffic rules?</strong></p>
+                                    <p class="small-title"><strong>A:</strong> Yes, Kalyan strictly follows all traffic rules and regulations.</p>
+                                </div>
+                                <!-- Add more Q&A pairs as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <button type="submit" class="btn sd-btn-custom mb-3" onclick="display('sectionhomepage')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectiondriver9" class="sd section drivers-bg-img">
+        <div class="pt-5 pd-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="p-3 mb-4 sd-drivers-name-title">Driver Details - Sainath</h2>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3 ml-3 pt-3 sd-details-bg bg-transparent">
+                        <img class="w-100" src="https://img.freepik.com/free-photo/handsome-business-man-travelling-car_1303-16402.jpg?size=626&ext=jpg" alt="" />
+                        <div class="p-3">
+                            <p class="main-head big-title">Sainath</p>
+                            <ul class="small-title">
+                                <li>Experience: 15 years</li>
+                                <li>Age: 40</li>
+                                <li>Salary: $60,000 per year</li>
+                                <li>Driving Profile: Experienced commuter</li>
+                                <li>Attitude with Customers: Friendly and helpful</li>
+                                <li>Additional Details:
+                                    <ul class="small-title">
+                                        <li>Sainath is a certified defensive driving instructor.</li>
+                                        <li>He holds a spotless driving record with zero accidents.</li>
+                                        <li>Known for providing a comfortable and enjoyable ride experience.</li>
+                                        <li>Sainath is well-versed in the latest navigation technologies for efficient commuting.</li>
+                                        <li>He has received commendations for his exceptional customer service.</li>
+                                        <li>Sainath is trained in basic vehicle maintenance to ensure a smooth and safe ride for passengers.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 mb-3 pt-3 ml-5 sd-details-bg bg-transparent shadow">
+                        <div class="p-3">
+                            <div class="questions-answers">
+                                <h3 class="font-weight-bold">Questions and Answers</h3>
+                                <div class="qa">
+                                    <p><strong>Q: How is Sainath's driving in traffic?</strong></p>
+                                    <p class="small-title"><strong>A:</strong> Sainath is very skilled in navigating through traffic. I've never had any issues.</p>
+                                </div>
+                                <div class="qa">
+                                    <p><strong>Q: Does Sainath follow traffic rules?</strong></p>
+                                    <p class="small-title"><strong>A:</strong> Yes, Sainath strictly follows all traffic rules and regulations.</p>
+                                </div>
+                                <!-- Add more Q&A pairs as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <button type="submit" class="btn sd-btn-custom mb-3" onclick="display('sectionhomepage')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    <script src="{{ url_for('static', filename='js/upromewithus.js') }}"></script>
+</body>
+
+</html>
